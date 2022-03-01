@@ -1,0 +1,127 @@
+:root {
+  --R: 50vh;
+  --I: 300px;
+}
+
+/* PCサイズ */
+@media screen and (min-width: 768px) {
+  :root {
+    --I: 400px;
+  }
+}
+
+.body {
+  overflow: hidden;
+  background-color: #000;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#shadow {
+  position: absolute;
+  width: calc(var(--R) * 10);
+  height: calc(var(--R) * 10);
+  margin-top: calc(var(--R) * -5);
+  margin-left: calc(var(--R) * -5);
+  top: 50vh;
+  left: 50%;
+  background: radial-gradient(#333, #222 30%, #111 60%, #000000 68%);
+}
+
+#items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transform: translate(calc(45% - var(--I) / 2), calc(50vh - var(--I) / 2));
+}
+
+.item {
+  position: absolute;
+  height: calc(var(--I));
+  width: calc(var(--I));
+  z-index: 10;
+}
+
+.item:nth-child(1) {
+  clip-path: polygon(40% 10%, 100% 0, 90% 75%, 0 100%);
+}
+
+.item:nth-child(2) {
+  left: calc(var(--I));
+  clip-path: polygon(5% 0, 90% 25%, 100% 100%, 0 40%);
+}
+
+.item:nth-child(3) {
+  left: calc(var(--I) * 0.8);
+  top: calc(var(--I) * 0.45);
+  clip-path: polygon(17.5% 0, 100% 50%, 10% 70%);
+}
+
+.item:nth-child(4) {
+  top: calc(var(--I) * 0.8);
+  left: calc(var(--I) * -0.1);
+  clip-path: polygon(20% 25%, 100% 0, 80% 100%, 25% 65%);
+}
+
+.item:nth-child(5) {
+  top: calc(var(--I) * 0.8);
+  left: calc(var(--I) * -0.95);
+  clip-path: polygon(70% 0, 100% 45%, 95% 85%, 25% 80%);
+}
+
+.item:nth-child(6) {
+  top: calc(var(--I) * -0.1);
+  left: calc(var(--I) * -0.75);
+  clip-path: polygon(40% 0, 100% 45%, 70% 100%, 40% 60%);
+}
+
+.item:nth-child(7) {
+  left: calc(var(--I) * -0.3);
+  top: calc(var(--I) * -0.7);
+  clip-path: polygon(75% 30%, 55% 100%, 0  60%);
+}
+
+.item:nth-child(8) {
+  left: calc(var(--I) * 0.4);
+  top: calc(var(--I) * -0.95);
+  clip-path: polygon(25% 0, 100% 100%, 65% 90%, 0% 100%);
+}
+
+.item:nth-child(9) {
+  top: calc(var(--I) * 0.5);
+  left: calc(var(--I) * -1.25);
+  clip-path: polygon(85% 0, 100% 20%, 75% 60%, 0 40%);
+}
+
+.item:nth-child(10) {
+  top: calc(var(--I) * -0.69);
+  left: calc(var(--I) * 1.2);
+  clip-path: polygon(75% 0, 100% 100%, 25% 75%, 0 40%);
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+#guide {
+  font-family: 'DM Sans', 'Zen Kaku Gothic New', sans-serif;
+  color: #ffffffbb;
+  text-shadow: 0 0 10px #000;
+  font-size: calc(var(--R) * 0.15);
+
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 10;
+  pointer-events: none;
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
