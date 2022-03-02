@@ -11,12 +11,14 @@
 }
 
 .body {
+  margin: 0;
   overflow: hidden;
   background-color: #000;
   -webkit-tap-highlight-color: transparent;
 }
 
 #stage {
+  display: block;
   filter: grayscale(100%);
   transition: filter 0.5s;
 }
@@ -128,4 +130,8 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+}
+
+[hidden] {
+  display: none;
 }
