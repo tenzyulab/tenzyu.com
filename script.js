@@ -40,6 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (!pointerDown) return;
 
     stage.style.pointerEvents = "none";
+    stage.style.filter = 'grayscale(0%)';
     guide.style.opacity = "0";
 
     const calcX = isTouch ? event.changedTouches[0].pageX - startX: event.pageX - startX;

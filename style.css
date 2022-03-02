@@ -1,6 +1,6 @@
 :root {
   --R: 50vh;
-  --I: 300px;
+  --I: 350px;
 }
 
 /* PCサイズ */
@@ -14,6 +14,11 @@
   overflow: hidden;
   background-color: #000;
   -webkit-tap-highlight-color: transparent;
+}
+
+#stage {
+  filter: grayscale(100%);
+  transition: filter 0.5s;
 }
 
 #shadow {
