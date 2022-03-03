@@ -13,7 +13,7 @@
 #stage {
   display: block;
   filter: grayscale(100%);
-  transition: filter 0.5s;
+  transition: filter 0.8s;
 }
 
 #shadow {
