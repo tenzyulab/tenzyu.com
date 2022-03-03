@@ -13,7 +13,7 @@
 #stage {
   display: block;
   filter: grayscale(100%);
-  transition: filter 0.8s;
+  transition: filter 0.666s;
 }
 
 #shadow {
@@ -102,9 +102,9 @@
 }
 
 .image {
-  height: 100%;
-  width: 100%;
-  background-size: auto 120%;
+  height: 105%;
+  width: 105%;
+  background-size: auto 100%;
 }
 
 #guide {
@@ -134,8 +134,5 @@
 @media screen and (min-width: 768px) {
   :root {
     --I: 400px;
-  }
-  .image {
-    background-size: auto 150%;
   }
 }
